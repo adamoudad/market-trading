@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  jupyter:
+    build: .
+    runtime: nvidia
+    ports: ['9000:8888', '6060:6006']
+    volumes:
+      - '.checkpoints:/checkpoints'
+      - './notebooks/:/notebooks'
+      - './data:/data'
+      - '.:/code'
