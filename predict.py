@@ -8,7 +8,7 @@ def predict_max_return(data, model):
     max_return_price, max_return_time = model.predict(input_data)[0]
 
     # Inverse normalization
-    max_return_price = (max_return_price * standard_deviation) + mean
+    max_return_price = (max_return_price * standard_deviation)
     max_return_time *= len(data)
 
     return max_return_price, max_return_time
