@@ -73,6 +73,4 @@ def max_return(window):
         time = window.argmin()
     return max_return, time
 
-from keras.utils imoport Sequence
-class MaxReturnGenerator(Sequence):
     
